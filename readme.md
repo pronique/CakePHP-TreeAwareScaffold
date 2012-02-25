@@ -15,9 +15,9 @@ The TreeAwareScaffold plugin was created as part of a [CakePHP tutorial found he
 ## Example Usage  ##
 
 Add the following to the top of AppController.php
+
 ```php
 App::uses('Scaffold', 'TreeAwareScaffold.Controller');
-
 App::uses('ScaffoldView', 'TreeAwareScaffold.View');
 ``` 
 
