@@ -1,11 +1,8 @@
 # TreeAwareScaffold Plugin for CakePHP 2 #
 
-This CakePHP plugin overrides the builtin scaffolding in CakePHP.  The plugin
-hides the lft,rght fields in all scaffold views for Models that have the TreeBehavior
-enabled.  It also generates ordered/indented dropdowns on forms when a model has a
-belongsTo association with a Tree enabled model.
+This CakePHP plugin overrides the builtin scaffolding in CakePHP.  The plugin hides the lft,rght fields in all scaffold views for TreeBehavior Models.  It also generates ordered/indented dropdowns on forms when the belongsTo model implements TreeBehavior.
 
-The TreeAwareScaffold plugin was created as part of a [CakePHP tutorial found here](http://www.pronique.com/blog/how-to-create-your-own-scaffolding-plugin-for-cakephp2).
+The TreeAwareScaffold plugin was created as part of a [CakePHP tutorial found here](http://www.pronique.com/blog/how-to-create-your-own-scaffolding-plugin-for-cakephp2) to demonstrate how to replace the builtin CakePHP Scaffolding.
 
 ## Installation ##
 
@@ -17,7 +14,7 @@ The TreeAwareScaffold plugin was created as part of a [CakePHP tutorial found he
     
 ## Example Usage  ##
 
-Add the follwing to the top of AppController
+Add the following to the top of AppController.php
 ```php
 App::uses('Scaffold', 'TreeAwareScaffold.Controller');
 App::uses('ScaffoldView', 'TreeAwareScaffold.View');

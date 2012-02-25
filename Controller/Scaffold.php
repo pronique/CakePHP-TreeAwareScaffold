@@ -105,7 +105,7 @@ class Scaffold {
  * @throws MissingModelException
  */
 	public function __construct(Controller $controller, CakeRequest $request) {
-		$this->controller = $controller;
+        $this->controller = $controller;
 
 		$count = count($this->_passedVars);
 		for ($j = 0; $j < $count; $j++) {
@@ -467,7 +467,7 @@ class Scaffold {
 * @param mixed $Model
 */
     protected function _isTree( $Model ) {
-        if ( $Model->hasMethod('generateTreeList') ) { return true; }
+        if ( $Model->hasMethod('generateTreeList') || $Model->hasMethod('generatetreelist') ) { return true; }
         return false;
     }
 }
